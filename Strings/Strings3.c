@@ -17,7 +17,7 @@
 #define MAX_BUFFER_SIZE 256
 
 int main() {
-    const char* input_string = "EEE > MACE!";    // Declare and initialize the constant character pointer
+    const char* input_string = "EEE > MACE!";    // Declare and initialise the constant character pointer
     int len = strlen(input_string);             // Calculate the length of the input string
 
     char copied_buffer[MAX_BUFFER_SIZE];        // Declare a local buffer for the copied string

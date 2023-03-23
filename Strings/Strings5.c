@@ -33,7 +33,7 @@ void reverse_string(char *str) {
 }
 
 int main() {
-    char input_string[] = "Reverse me";  // Declare and initialize the char array
+    char input_string[] = "Reverse me";  // Declare and initialise the char array
 
     printf("Original string: %s\n", input_string);  // Print the original string
 
