@@ -12,7 +12,7 @@
 #include <string.h>
 
 int main() {
-    char input_string[] = "EEEManchester";  // Declare and initialize the character array
+    char input_string[] = "EEEManchester";  // Declare and initialise the character array
     int len = strlen(input_string);         // Calculate the length of the input string
     int new_len = len * 2;                  // Calculate the length of the new string with spaces
 
