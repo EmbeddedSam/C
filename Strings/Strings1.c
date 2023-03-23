@@ -15,7 +15,7 @@
 #include <string.h>
 
 int main() {
-    char input_string[] = "EEE > MACE!";    // Declare and initialize the character array
+    char input_string[] = "EEE > MACE!";    // Declare and initialise the character array
     int len = strlen(input_string);         // Calculate the length of the input string
 
     char copied_string[len + 1];            // Declare an array to store the copied string
