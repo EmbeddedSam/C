@@ -53,20 +53,32 @@ int main() {
     return 0;
 }
 
-// Function to update the car price
+/**
+* Function Name: update_car_price
+* 
+* Function Brief: Updates the price of an ElectricCar struct
+* 
+* This function takes a pointer to an ElectricCar struct and a new price as inputs.
+* It updates the price of the ElectricCar with the new price. The function uses
+* a pointer to directly modify the original data, rather than a copy of the struct.
+* 
+* Function Parameters:
+* (1) car A pointer to the ElectricCar struct to be updated
+* (2) new_price The new price to set for the ElectricCar
+*
+* Example usage:
+*
+* ElectricCar myCar = {"Tesla Model S", 2022, 80000, 100};
+*/
 void update_car_price(ElectricCar *car, double new_price) {
     car->price = new_price;
 
-// Note In the update_car_price function, we use a pointer to the ElectricCar struct 
+// Note for students - In the update_car_price function, we use a pointer to the ElectricCar struct 
 // because we want to modify the original car data rather than a copy of it. 
-// When you pass a struct to a function, C makes a copy of the struct, 
-// so any changes made to the copy inside the function won't affect the original data. 
-// By using a pointer, we're passing the memory address of the original struct, 
-// allowing the function to directly modify the original data.
+// When you pass a struct to a function, C makes a copy of the struct, so any changes made to the copy inside the function won't affect the original data. 
+// By using a pointer, we're passing the memory address of the original struct,  allowing the function to directly modify the original data.
 // The -> notation is used to access the members of a struct through a pointer. 
-// When you have a pointer to a struct, 
-// you can't use the . notation to access its members directly because the pointer holds the memory address of the struct, 
-// not the struct itself. 
+// When you have a pointer to a struct, you can't use the . notation to access its members directly because the pointer holds the memory address of the struct, not the struct itself. 
 // The -> operator is a shorthand for dereferencing the pointer and then accessing the member.
 }
 
