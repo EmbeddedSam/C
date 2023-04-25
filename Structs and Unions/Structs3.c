@@ -1,13 +1,21 @@
-/*
- * Structs, Functions and Pointers Example
+/**
+ * Function Name: compare_car_prices
+ * Function Brief: Compares the prices of two ElectricCar structs and prints the result
  *
- * Sam Walsh
- * April 16, 2023
+ * This function takes two ElectricCar structs as input and compares their prices.
+ * It then prints a message indicating which car is cheaper, or if they have the
+ * same price. The function uses printf() to display the comparison result in a
+ * human-readable way.
  *
- * This C program demonstrates the usage of structs and functions
- * to manipulate electric car information. The programme initialises
- * variables of the ElectricCar struct type for two different car models
- * (Tesla and Rivian), then uses functions to update, print, and compare car information.
+ * Function Parameters:
+ *  (1) car1 The first ElectricCar struct to compare
+ *  (2) car2 The second ElectricCar struct to compare
+ *
+ * Example usage:
+ *
+ *     ElectricCar car1 = {"Tesla Model S", 2022, 80000, 100};
+ *     ElectricCar car2 = {"Rivian R1T", 2022, 70000, 105};
+ *     compare_car_prices(car1, car2);
  */
 
 #include <stdio.h>
