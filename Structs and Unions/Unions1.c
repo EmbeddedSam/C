@@ -14,7 +14,6 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <time.h>
 
 // Define a union named 'Data'
 typedef union {
@@ -24,10 +23,6 @@ typedef union {
 } Data;
 
 int main() {
-    // beginning timestamp
-    struct timespec begin;
-    timespec_get(&begin, TIME_UTC);
-
     // Declare and initialize a Data union
     Data myData;
 
@@ -43,15 +38,6 @@ int main() {
     strncpy(myData.stringValue, "Hello, world!", sizeof(myData.stringValue) - 1);
     myData.stringValue[sizeof(myData.stringValue) - 1] = '\0';
     printf("String value: %s\n", myData.stringValue);
-
-    // ending timestamp
-    struct timespec end;
-    timespec_get(&end, TIME_UTC);
-
-      // display the difference between the 2 timestamps
-    double time_spent = (end.tv_sec - begin.tv_sec) + (end.tv_nsec - begin.tv_nsec) / 1000000000.0;
-
-    printf("Time it took to execute: %lf\n", time_spent);
 
     return 0;
 }
